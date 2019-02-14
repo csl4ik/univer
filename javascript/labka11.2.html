@@ -6,16 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script type="text/javascript">
-  var a= +prompt("Введите число", '');
-
-  function twoPow(a){
-    var b= Math.pow(a, 2);
-    alert(b)
+  var func2 = function () {
+    var a = [0,1,2,3,4]
+    var s = 0
+      for( var i = 0;i<a.length;i++)
+      s=s + a[i]
+      return s;
   }
+  alert(func2())
+
 
   </script>
 </head>
 <body>
-  <input type="button" value="Жмякни" onclick="twoPow(a)">
+
+  <input type="button" value="Жмяк" onclick="func2()">
+  <input type="button" value="Жмякni" onclick="func()">
+
 </body>
 </html>
+
